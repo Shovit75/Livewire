@@ -1,5 +1,7 @@
 <div>
     {{-- Be like water. --}}
+    <h1 class="mb-1 font-medium"> {{ $welcome }}</h1>
+    
     <h1 class="mb-1 font-medium"> {{ $greeting }}</h1>
 
     <input type="text" class="mt-2 mb-1 block w-full p-4 border rounded-md bg-gray-700 text-white" id="newName" wire:model.live="newName">
