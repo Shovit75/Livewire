@@ -1,4 +1,5 @@
 <div>
+    
     <div class="max-w-md mx-auto bg-white dark:bg-gray-800 p-6 rounded-2xl space-y-5 relative aspect-video overflow-hidden rounded-xl border border-neutral-200 dark:border-neutral-700">
     <form wire:submit="submitForm()">
         <!-- Your DOB -->
@@ -43,6 +44,11 @@
             {{$this->compatibility}} %
         </div>
     @endif
+    </div>
+    
+    <div id="displayOver"
+        style="display: none; position: absolute; inset: 0; justify-content: center; align-items: center; background: rgba(0,0,0,0.4);">
+        <img src="{{ asset('images/handsHeart.jpg') }}" alt="image" style="width: 100%; height: 100%; object-fit: cover;" />
     </div>
 
     <script>
